@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kite OAuth Redirect</title>
+  <!-- instantly forward query-string to your mobile scheme -->
+  <meta http-equiv="refresh" content="0; url=kiteconnectdemo://oauth?%s">
+  <script>
+    const qs = window.location.search;
+    window.location = `kiteconnectdemo://oauth${qs}`;
+  </script>
+</head>
+<body>
+  Redirecting…
+</body>
+</html>
